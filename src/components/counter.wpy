@@ -1,0 +1,17 @@
+<template>
+  <view>
+    data: {{ values.b.c }}
+  </view>
+</template>
+<script>
+import wepy from 'wepy';
+
+export default class Counter extends wepy.component {
+  props = {
+    values: {
+      type: [Object]
+    }
+  };
+  data = {};
+}
+</script>
